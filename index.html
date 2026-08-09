@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern minimalist lighting and chandelier product catalog.">
+  <title>LUMINA — Lighting & Chandelier Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#">LUMINA<span>.</span></a>
+    <nav>
+      <a href="#catalog">Catalog</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">LIGHTING COLLECTION 2026</p>
+        <h1>Light that<br><em>defines</em> a space.</h1>
+        <p class="hero-copy">A curated collection of modern chandeliers and architectural lighting designed for refined interiors.</p>
+        <a class="button" href="#catalog">Explore Collection</a>
+      </div>
+      <div class="hero-card">
+        <div class="hero-orb"></div>
+        <span>CURATED LIGHTING</span>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OUR COLLECTION</p>
+          <h2>Featured Products</h2>
+        </div>
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">ABOUT LUMINA</p>
+        <h2>Designed to make an entrance.</h2>
+      </div>
+      <p>From statement chandeliers to refined accent lighting, our collection brings form, proportion, and warmth together. Every piece is selected for projects where details matter.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">PROJECT INQUIRIES</p>
+      <h2>Looking for the right light?</h2>
+      <p>Contact us for product specifications, quotations, availability, and project requirements.</p>
+      <a class="button dark" href="mailto:your@email.com">Request a Quote</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 LUMINA Lighting</span>
+    <span>Modern Lighting • Chandeliers • Architectural Pieces</span>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box">
+      <button class="close" data-close aria-label="Close">×</button>
+      <img id="modalImage" src="" alt="">
+      <div class="modal-info">
+        <p class="eyebrow" id="modalCategory"></p>
+        <h2 id="modalTitle"></h2>
+        <p class="price" id="modalPrice"></p>
+        <p id="modalDescription"></p>
+        <p class="specs" id="modalSpecs"></p>
+        <a class="button dark" href="mailto:your@email.com">Request a Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
